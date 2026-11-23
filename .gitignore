@@ -1,0 +1,41 @@
+# --- Node.js мусор (тот самый, что ты нашел) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+package.json
+
+
+# --- Python (Бэкенд) ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+ENV/
+*.egg-info/
+
+# --- Файлы окружения и секреты (ОЧЕНЬ ВАЖНО) ---
+.env
+.env.local
+
+# --- Твои загруженные картинки (чтобы не заливать гигабайты фото в Git) ---
+media/
+backend/media/
+
+# --- Android / Kotlin (Фронтенд) ---
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+captures/
+.externalNativeBuild
+.cxx/
+
+# --- Мусор от операционной системы и IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
