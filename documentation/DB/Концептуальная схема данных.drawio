@@ -1,0 +1,111 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="LWpjD5klJ8DPc5G-vzt3">
+    <mxGraphModel dx="1161" dy="1210" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="User" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;" value="Пользователь" vertex="1">
+          <mxGeometry height="60" width="160" x="16" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="Photo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;" value="Фотография" vertex="1">
+          <mxGeometry height="60" width="160" x="16" y="564" as="geometry" />
+        </mxCell>
+        <mxCell id="Contact" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1;" value="Контакт" vertex="1">
+          <mxGeometry height="60" width="160" x="400" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="Message" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1;" value="Сообщение" vertex="1">
+          <mxGeometry height="60" width="160" x="400" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="Partner" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;" value="Партнёрский объект" vertex="1">
+          <mxGeometry height="60" width="180" x="799" y="-27" as="geometry" />
+        </mxCell>
+        <mxCell id="Offer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;" value="Спецпредложение" vertex="1">
+          <mxGeometry height="60" width="180" x="800" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="Promo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;" value="Промокод" vertex="1">
+          <mxGeometry height="60" width="180" x="799" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_has" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" value="имеет" vertex="1">
+          <mxGeometry height="80" width="120" x="36" y="448" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_init" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" value="инициирует" vertex="1">
+          <mxGeometry height="80" width="120" x="230" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_resp" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" value="отвечает" vertex="1">
+          <mxGeometry height="80" width="120" x="230" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_contains" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" value="содержит" vertex="1">
+          <mxGeometry height="80" width="120" x="420" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_writes" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" value="пишет" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_pub" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" value="публикует" vertex="1">
+          <mxGeometry height="80" width="120" x="829" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_gen" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" value="порождает" vertex="1">
+          <mxGeometry height="80" width="120" x="830" y="239" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_use" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" value="использует" vertex="1">
+          <mxGeometry height="80" width="120" x="623" y="343" as="geometry" />
+        </mxCell>
+        <mxCell id="e_u_p" edge="1" parent="1" source="User" style="endArrow=none;html=1;strokeColor=#333333;startArrow=ERmandOne;startFill=0;" target="rel_has">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_h_p" edge="1" parent="1" source="rel_has" style="endArrow=ERzeroToMany;html=1;strokeColor=#333333;endFill=0;" target="Photo">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="96" y="541.73" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_u_ci" edge="1" parent="1" source="User" style="endArrow=none;html=1;strokeColor=#333333;startArrow=ERzeroToMany;startFill=0;" target="rel_init">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ci_c" edge="1" parent="1" source="rel_init" style="endArrow=ERzeroToMany;html=1;strokeColor=#333333;endFill=0;" target="Contact">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_u_cr" edge="1" parent="1" source="User" style="endArrow=none;html=1;strokeColor=#333333;startArrow=ERzeroToMany;startFill=0;" target="rel_resp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cr_c" edge="1" parent="1" source="rel_resp" style="endArrow=ERzeroToMany;html=1;strokeColor=#333333;endFill=0;" target="Contact">
+          <mxGeometry relative="1" x="0.0007" as="geometry">
+            <Array as="points">
+              <mxPoint x="361.65" y="413.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_c_m" edge="1" parent="1" source="Contact" style="endArrow=none;html=1;strokeColor=#333333;startArrow=ERmandOne;startFill=0;" target="rel_contains">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_m_c" edge="1" parent="1" source="rel_contains" style="endArrow=ERzeroToMany;html=1;strokeColor=#333333;startArrow=none;startFill=0;endFill=0;" target="Message">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_u_m" edge="1" parent="1" source="User" style="endArrow=none;html=1;strokeColor=#333333;startArrow=ERmandOne;startFill=0;" target="rel_writes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_w_m" edge="1" parent="1" source="rel_writes" style="endArrow=ERzeroToMany;html=1;strokeColor=#333333;startArrow=none;startFill=0;endFill=0;" target="Message">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_part_o" edge="1" parent="1" source="Partner" style="endArrow=none;html=1;strokeColor=#333333;startArrow=ERmandOne;startFill=0;" target="rel_pub">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_pub_o" edge="1" parent="1" source="rel_pub" style="endArrow=ERzeroToMany;html=1;strokeColor=#333333;endFill=0;" target="Offer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_o_pr" edge="1" parent="1" source="Offer" style="endArrow=none;html=1;strokeColor=#333333;startArrow=ERmandOne;startFill=0;" target="rel_gen">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_gen_pr" edge="1" parent="1" source="rel_gen" style="endArrow=ERzeroToMany;html=1;strokeColor=#333333;endFill=0;" target="Promo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_c_pr" edge="1" parent="1" source="Contact" style="endArrow=none;html=1;strokeColor=#333333;startArrow=ERmandOne;startFill=0;" target="rel_use">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_use_pr" edge="1" parent="1" source="rel_use" style="endArrow=ERzeroToMany;html=1;strokeColor=#333333;endFill=0;" target="Promo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
