@@ -7,7 +7,8 @@ from sqlalchemy.orm import Session
 
 from app.config import settings
 from app.database import Base, engine, get_db, check_db_connection
-from app.core.exceptions import AppException, app_exception_handler
+from app.core.exceptions import AppException, app_exception_handler, validation_exception_handler
+from fastapi.exceptions import RequestValidationError
 import app.models  # Ensures all models are registered with Base.metadata
 
 
@@ -40,6 +41,7 @@ app.add_middleware(
 )
 
 app.add_exception_handler(AppException, app_exception_handler)
+app.add_exception_handler(RequestValidationError, validation_exception_handler)
 
 # Include API routes
 from app.api.routes import api_router
