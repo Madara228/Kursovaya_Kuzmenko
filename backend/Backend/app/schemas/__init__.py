@@ -15,16 +15,16 @@ from app.schemas.user import (
 from app.schemas.contact import (
     SwipeAction,
     SwipeRequest,
-    SwipeResponse,
+    SwipeRequest,
+    FeedResponse,
     FeedUserItem,
     PaginationMeta,
-    FeedResponse,
 )
 from app.schemas.chat import (
     MatchUser,
     MatchItem,
     MatchesResponse,
-    LastMessageInfo,
+    ChatOtherUser,
     ChatListItem,
     ChatsListResponse,
     MessageItem,
@@ -32,6 +32,20 @@ from app.schemas.chat import (
     SendMessageRequest,
     SendMessageResponse,
     MarkReadResponse,
+)
+from app.schemas.partner import (
+    PartnerProfileResponse,
+    PartnerOfferResponse,
+    OfferPartnerInfo,
+    UserOfferItem,
+    UserOffersResponse,
+    OfferDeactivateResponse,
+)
+from app.schemas.invite import (
+    CreateInviteRequest,
+    CreateInviteResponse,
+    InvitePreviewResponse,
+    AcceptInviteResponse,
 )
 
 __all__ = [
@@ -47,14 +61,13 @@ __all__ = [
     "PublicUserProfileResponse",
     "SwipeAction",
     "SwipeRequest",
-    "SwipeResponse",
     "FeedUserItem",
     "PaginationMeta",
     "FeedResponse",
     "MatchUser",
     "MatchItem",
     "MatchesResponse",
-    "LastMessageInfo",
+    "ChatOtherUser",
     "ChatListItem",
     "ChatsListResponse",
     "MessageItem",
@@ -62,4 +75,14 @@ __all__ = [
     "SendMessageRequest",
     "SendMessageResponse",
     "MarkReadResponse",
+    "PartnerProfileResponse",
+    "PartnerOfferResponse",
+    "OfferPartnerInfo",
+    "UserOfferItem",
+    "UserOffersResponse",
+    "OfferDeactivateResponse",
+    "CreateInviteRequest",
+    "CreateInviteResponse",
+    "InvitePreviewResponse",
+    "AcceptInviteResponse",
 ]

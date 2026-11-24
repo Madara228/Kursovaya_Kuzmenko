@@ -27,18 +27,22 @@ class MatchesResponse(BaseModel):
     meta: PaginationMeta
 
 
-# 5.2. Chats list with last message
-class LastMessageInfo(BaseModel):
-    text: str
-    created_at: datetime
-    is_read: bool
+# 5.2. Chats list with other_user
+class ChatOtherUser(BaseModel):
+    id: UUID
+    first_name: str
+    main_photo: Optional[str] = None
+
+    class Config:
+        from_attributes = True
 
 
 class ChatListItem(BaseModel):
     contact_initiator_id: UUID
     contact_responder_id: UUID
-    companion: MatchUser
-    last_message: Optional[LastMessageInfo] = None
+    other_user: ChatOtherUser
+    last_message: Optional[str] = None
+    last_message_time: Optional[datetime] = None
     unread_count: int = 0
 
 
