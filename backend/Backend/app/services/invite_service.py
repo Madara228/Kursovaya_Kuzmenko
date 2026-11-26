@@ -96,7 +96,7 @@ def create_invite(
     invite_link = f"/api/invites/{invite_token}"
 
     # 5. Create chat message from current_user
-    message_text = f'Предлагаю пойти в "{offer.title}". Если согласен - перейди по ссылке: {invite_link}'
+    message_text = f'{current_user.first_name} предлагает пойти в "{offer.title}". Если согласен — перейди по ссылке: {invite_link}'
     msg = Message(
         author_id=current_user.id,
         contact_initiator_id=contact_initiator_id,

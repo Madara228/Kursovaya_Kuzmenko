@@ -1,0 +1,25 @@
+Запуск бэкенда RealMatch
+========================
+
+1. Откройте терминал в папке  backend\Backend
+2. Выполните:
+
+   .\.venv\Scripts\python.exe -m uvicorn app.main:app --host 0.0.0.0 --port 8000
+
+   Вариант с автоперезагрузкой при изменении кода:
+
+   .\.venv\Scripts\python.exe -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+
+Проверка:
+  http://127.0.0.1:8000/health   -> {"status":"healthy","database":"connected"}
+  http://127.0.0.1:8000/docs     -> Swagger со всеми эндпоинтами
+
+
+Адреса для Android-приложения:
+  эмулятор:        http://10.0.2.2:8000   (по умолчанию в приложении)
+  реальный телефон: http://<IP-компьютера>:8000
+                    IP узнать: ipconfig
+                    прописать в frontend\local.properties:  RM_HOST=http://<IP-компьютера>:8000
+
+Перед запуском должен быть запущен PostgreSQL с базой realmatch.

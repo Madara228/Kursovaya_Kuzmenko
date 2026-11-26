@@ -401,6 +401,7 @@
           "photo_url": "/media/offers/uuid/main.jpg",
           "partner": {
             "name": "Кафе Ромашка",
+            "city": "Москва",
             "address": "ул. Ленина, 1"
           }
         }

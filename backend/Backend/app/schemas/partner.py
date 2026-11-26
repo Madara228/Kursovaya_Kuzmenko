@@ -37,6 +37,7 @@ class PartnerOfferResponse(BaseModel):
 # Offer info for User (API 7.1)
 class OfferPartnerInfo(BaseModel):
     name: str
+    city: str
     address: str
 
     class Config:
